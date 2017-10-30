@@ -106,7 +106,7 @@ public class VarastoTest {
     @Test
     public void vaaraAlkuSaldo() {
         Varasto uusi = new Varasto(10,-2);
-        assertEquals(1.0, uusi.getSaldo(), vertailuTarkkuus);
+        assertEquals(0.0, uusi.getSaldo(), vertailuTarkkuus);
     }
     
     @Test

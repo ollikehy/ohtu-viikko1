@@ -34,7 +34,7 @@ mainClassName = 'ohtu.ohtuvarasto.Main'
 //Jar 
 jar {
     manifest {
-        attributes 'Main-Class': 'ohtu.main'
+        attributes 'Main-Class': 'Main'
     }
 }
 

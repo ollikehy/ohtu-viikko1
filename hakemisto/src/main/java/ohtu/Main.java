@@ -1,3 +1,5 @@
+package ohtu;
+
 import java.util.*;
 import ohtu.Multiplier;
 

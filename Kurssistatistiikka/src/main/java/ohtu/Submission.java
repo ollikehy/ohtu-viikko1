@@ -4,6 +4,7 @@ public class Submission {
     private int week;
     private int hours;
     private int[] exercises;
+    private int max;
     
     public int[] getExercises() {
         return this.exercises;
@@ -36,8 +37,13 @@ public class Submission {
     @Override
     public String toString() {
         return "Viikko: "+week
+                + " tehtyjä tehtäviä: " + exercises.length + " (maksimi " + max + ")"
                 + ", aikaa tehtävien tekemiseen kului: " + hours + "h"
                 + ", tehtyjä tehtäviä ovat: " + getTehdyt();
+    }
+
+    public void setMax(int max) {
+        this.max = max;
     }
     
 }

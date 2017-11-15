@@ -1,0 +1,4 @@
+pekka;akkep
+jukka;akkuj
+pekkap;p
+aaa;aaaaas

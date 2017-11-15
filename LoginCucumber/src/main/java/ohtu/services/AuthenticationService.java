@@ -33,6 +33,14 @@ public class AuthenticationService {
             return false;
         }
 
+        if (username.isEmpty() || password.isEmpty()) {
+            return false;
+        }
+
+        if (!tarkistaSalasana(password)) {
+            return false;
+        }
+
         userDao.add(new User(username, password));
 
         return true;
@@ -40,7 +48,41 @@ public class AuthenticationService {
 
     private boolean invalid(String username, String password) {
         // validity check of username and password
-
+        if (username.length() <= 2) {
+            return true;
+        } else if (password.length() <= 7) {
+            return true;
+        }
         return false;
+    }
+
+    private boolean tarkistaSalasana(String password) {
+        ArrayList<Character> numerot = new ArrayList();
+        numerot.add('0');
+        numerot.add('1');
+        numerot.add('2');
+        numerot.add('3');
+        numerot.add('4');
+        numerot.add('5');
+        numerot.add('6');
+        numerot.add('7');
+        numerot.add('8');
+        numerot.add('9');
+
+        char a = password.charAt(0);
+        boolean numero = false;
+        boolean eriKirjaimia = false;
+        for (int i = 0; i < password.length(); i++) {
+            if (password.charAt(i) != a) {
+                eriKirjaimia = true;
+            }
+            if (numerot.contains(password.charAt(i))) {
+                numero = true;
+            }
+        }
+        if (!numero || !eriKirjaimia) {
+            return false;
+        }
+        return true;
     }
 }

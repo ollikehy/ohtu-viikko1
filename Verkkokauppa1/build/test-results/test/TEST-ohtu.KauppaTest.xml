@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ohtu.KauppaTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-11-24T12:31:24" hostname="fuxi16" time="0.3">
+  <properties/>
+  <testcase name="ostossaOikeatParametrit" classname="ohtu.KauppaTest" time="0.281"/>
+  <testcase name="aloitaAsiointiNollaaKorin" classname="ohtu.KauppaTest" time="0.004"/>
+  <testcase name="oikeaAsiakasTilinumeroSumma" classname="ohtu.KauppaTest" time="0.004"/>
+  <testcase name="koristaPoistaminenToimii" classname="ohtu.KauppaTest" time="0.002"/>
+  <testcase name="kaksiSamaaTuotetta" classname="ohtu.KauppaTest" time="0.001"/>
+  <testcase name="viiteGeneraattoriKutsuttuKahdesti" classname="ohtu.KauppaTest" time="0.002"/>
+  <testcase name="kaksiTuotettaToinenLoppu" classname="ohtu.KauppaTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

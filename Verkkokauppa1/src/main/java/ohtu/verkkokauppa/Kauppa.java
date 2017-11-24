@@ -41,5 +41,9 @@ public class Kauppa implements Store {
 
         return pankki.tilisiirto(nimi, viite, tiliNumero, kaupanTili, summa);
     }
+    
+    public String getTili() {
+        return this.kaupanTili;
+    }
 
 }

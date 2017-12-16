@@ -23,7 +23,7 @@ public class Main {
         System.out.println("");
         System.out.println("");
         System.out.println("");
-        Matcher c = new Not(new HasAtLeast(1, "goals"));
+        Matcher c = new Not(new HasAtLeast(0, "goals"));
         Matcher b = new HasFewerThan(5, "goals");
         Matcher z = query.oneOf(c, b);
 
